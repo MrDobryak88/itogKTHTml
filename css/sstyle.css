@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
+header {
+    background-color: #292b2c;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.create-tournament, .current-tournaments {
+    margin: 20px 0;
+    background-color: #292b2c;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.create-tournament h2, .current-tournaments h2 {
+    margin-bottom: 10px;
+}
+
+.create-tournament form {
+    display: flex;
+    flex-direction: column;
+}
+
+.create-tournament input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.create-tournament button {
+    padding: 10px;
+    background-color: #ff6f61;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.create-tournament button:hover {
+    background-color: #e55a50;
+}
+
+.tournament-card {
+    background-color: #333;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.tournament-card h3 {
+    margin: 0;
+}
+
+.tournament-card p {
+    margin: 5px 0;
+}
+
+footer {
+    background-color: #292b2c;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

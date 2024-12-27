@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Турниры Dota 2</title>
+    <link rel="stylesheet" href="sstyle.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1>Турниры Dota 2</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="tournaments.html">Турниры</a></li>
+                <li><a href="heroes.html">Герои</a></li>
+                <li><a href="strategies.html">Стратегии</a></li>
+                <li><a href="forum.html">Форум</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="create-tournament">
+            <h2>Создать турнир</h2>
+            <form id="tournamentForm">
+                <input type="text" id="tournamentName" placeholder="Название турнира" required>
+                <input type="date" id="tournamentDate" required>
+                <input type="number" id="tournamentPlayers" placeholder="Количество игроков" required>
+                <button type="submit">Создать турнир</button>
+            </form>
+        </section>
+
+        <section class="current-tournaments">
+            <h2>Текущие турниры</h2>
+            <div id="tournamentList">
+                <!-- Здесь будут отображаться текущие турниры -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Dota 2 Tournament Page</p>
+    </footer>
+
+    <script src="tour.js"></script>
+</body>
+</html>
