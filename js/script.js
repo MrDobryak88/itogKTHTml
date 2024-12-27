@@ -57,10 +57,27 @@ document.querySelector('.contact-form').addEventListener('submit', function(even
 document.querySelectorAll('button').forEach(button => {
     button.addEventListener('mouseenter', () => {
         button.style.transform = 'scale(1.05)';
+        button.style.backgroundColor = '#444'; // Темный фон при наведении
+        button.style.transition = 'background-color 0.3s ease, transform 0.3s ease'; // Плавный переход
     });
 
     button.addEventListener('mouseleave', () => {
         button.style.transform = 'scale(1)';
+        button.style.backgroundColor = ''; // Возвращаем исходный цвет
+    });
+});
+
+// Анимация карточек героев при наведении
+document.querySelectorAll('.hero-card').forEach(card => {
+    card.addEventListener('mouseenter', () => {
+        card.style.transform = 'scale(1.05)';
+        card.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.5)';
+        card.style.transition = 'transform 0.3s ease, box-shadow 0.3s ease'; // Плавный переход
+    });
+
+    card.addEventListener('mouseleave', () => {
+        card.style.transform = 'scale(1)';
+        card.style.boxShadow = 'none'; // Убираем тень
     });
 });
 

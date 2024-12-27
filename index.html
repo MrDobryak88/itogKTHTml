@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dota 2 - Главная страница</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
@@ -26,36 +27,64 @@
     </header>
 
     <main>
-        <section class="slider">
-            <div class="slide active">
-                <img src="" alt="Слайд 1">
-                <div class="caption">Последние новости и события</div>
-            </div>
-            <div class="slide">
-                <img src="img/i (9).webp" alt="Слайд 2">
-                <div class="caption">Популярные герои</div>
+        <section class="news-grid">
+            <h2>Последние новости</h2>
+            <div class="grid-container">
+                <div class="news-item">
+                    <img src="/img/maxresdefault (1).jpg" alt="Новость 1">
+                    <h3>Обновление 7.30 вышло</h3>
+                    <p>Новый патч включает в себя множество изменений, включая баланс героев и новые предметы.</p>
+                    <a href="/html/newsbd.html/news1.html" class="read-more">Читать далее</a>
+                </div>
+                <div class="news-item">
+                    <img src="img/nachinayutsya-zakrytye-otborochnye-na-the-international-2024-po-dota-v-zapadnoj-evrope-i-a_171874794855433924.jpg" alt="Новость 2">
+                    <h3>Турнир The International 2023</h3>
+                    <p>Приглашаем вас на самый ожидаемый турнир года с участием лучших команд мира.</p>
+                    <a href="news-detail.html?id=2" class="read-more">Читать далее</a>
+                </div>
+                <div class="news-item">
+                    <img src="img/news3.jpg" alt="Новость 3">
+                    <h3>Заголовок новости 3</h3>
+                    <p>Краткое описание новости 3. Здесь будет информация о событии, которое произошло.</p>
+                    <a href="news-detail.html?id=3" class="read-more">Читать далее</a>
+                </div>
+                <div class="news-item">
+                    <img src="img/news4.jpg" alt="Новость 4">
+                    <h3>Заголовок новости 4</h3>
+                    <p>Краткое описание новости 4. Здесь будет информация о событии, которое произошло.</p>
+                    <a href="news-detail.html?id=4" class="read-more">Читать далее</a>
+                </div>
+                <!-- Добавьте больше новостей по необходимости -->
             </div>
         </section>
-
+        
         <section class="popular-heroes" id="heroes">
-            <h2>Популярные герои</h2>
-            <div class="hero-card jirtress">
-                <img src="img/1514131103_preview_1600x900_Pudge Game Dota 2.jpg" alt="Герой 1">
-                <h3>Пудж</h3>
-                <p>Каждый точный бросок знаменитого крюка вселяет страх во врагов Pudge, ведь, притянув жертву, он душит её ядовитым газом и расчленяет её своим тесаком. С каждым убийством его здоровье и урон увеличиваются, и вскоре погибель от его рук становится неизбежной.</p>
-                <a href="hero.html?id=1">Подробнее</a>
-            </div>
-            <div class="hero-card snaiper">
-                <img src="img/steamworkshop_collection_1378564301_collection_branding.jpg" alt="Герой 2">
-                <h3>Sniper</h3>
-                <p>Sniper — это герой с дальним типом атаки, основным атрибутом которого является Agility attribute symbol ловкость. Его первая способность, Shrapnel icon Shrapnel, использует заряд шрапнели, покрывая указанную область дождем из разрывной дроби. Противники под ним замедляются и получают урон. Раскрывает туман войны в области действия. Пассивная способность, Headshot icon Headshot, дает шанс нанести дополнительный урон и ненадолго замедлить противника. Активируемая способность, Take Aim icon Take Aim, пасивно увеличивает дальность стрельбы. При активации удваивает бонус дальности атаки. Ультимативной способностью, Assassinate icon Assassinate, Sniper целится во вражеского юнита и через несколько секунд совершает сокрушительный выстрел, который наносит урон с огромной дистанции. Способность кратковременно оглушает цель.</p>
-                <a href="hero.html?id=2">Подробнее</a>
-            </div>
-            <div class="hero-card support">
-                <img src="hero3.jpg" alt="Герой 3">
-                <h3>Герой 3</h3>
-                <p>Краткое описание героя. Этот герой помогает команде с помощью своих уникальных способностей.</p>
-                <a href="hero.html?id=3">Подробнее</a>
+            <h2>Популярные герои сегодня</h2>
+            <div class="hero-grid">
+                <div class="hero-card jirtress">
+                    <img src="img/1514131103_preview_1600x900_Pudge Game Dota 2.jpg" alt="Герой 1">
+                    <h3>Пудж</h3>
+                    <p>Каждый точный бросок знаменитого крюка вселяет страх во врагов Pudge, ведь, притянув жертву, он душит её ядовитым газом и расчленяет её своим тесаком.</p>
+                    <a href="hero.html?id=1">Подробнее</a>
+                </div>
+                <div class="hero-card snaiper">
+                    <img src="img/steamworkshop_collection_1378564301_collection_branding.jpg" alt="Герой 2">
+                    <h3>Sniper</h3>
+                    <p>Sniper — это герой с дальним типом атаки, основным атрибутом которого является ловкость. Его первая способность, Shrapnel, использует заряд шрапнели.</p>
+                    <a href="hero.html?id=2">Подробнее</a>
+                </div>
+                <div class="hero-card support">
+                    <img src="hero3.jpg" alt="Герой 3">
+                    <h3>Герой 3</h3>
+                    <p>Краткое описание героя. Этот герой помогает команде с помощью своих уникальных способностей.</p>
+                    <a href="hero.html?id=3">Подробнее</a>
+                </div>
+                <div class="hero-card support">
+                    <img src="hero3.jpg" alt="Герой 4">
+                    <h3>Герой 3</h3>
+                    <p>Краткое описание героя. Этот герой помогает команде с помощью своих уникальных способностей.</p>
+                    <a href="hero.html?id=3">Подробнее</a>
+                </div>
             </div>
         </section>
 
@@ -106,6 +135,6 @@
         </div>
     </footer>
     
-    <script src="html/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
-</htm
+</html>
