@@ -1,0 +1,121 @@
+/* Основные стили для body */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #1a1a1a; /* Темный фон для геймерской темы */
+    color: #f0f0f0; /* Светлый текст для контраста */
+    margin: 0;
+    padding: 0;
+}
+
+/* Стили для заголовка */
+header {
+    background-color: #f34360;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+}
+
+.date {
+    font-size: 1.2em;
+    margin-top: 5px;
+}
+
+.breadcrumb {
+    display: flex; 
+    align-items: center; 
+    padding: 10px 15px; 
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    margin-bottom: 20px; 
+}
+
+.breadcrumb a {
+    text-decoration: none; 
+    color: #007bff; 
+    margin-right: 5px;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline; 
+}
+
+.breadcrumb span {
+    color: #6c757d; 
+}
+
+/* Стили для новостей */
+.news-detail {
+    padding: 20px;
+    max-width: 87%;
+    margin: auto;
+    background-color: #2a2a2a; 
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7); 
+}
+
+.news-detail img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.news-detail h2 {
+    margin-top: 20px;
+    color: #f05b73; /* Красный цвет для подзаголовка */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.news-detail p {
+    margin: 15px 0;
+    color: #e0e0e0; /* Светлый текст для параграфов */
+}
+
+.news-detail ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.news-detail ul li {
+    margin: 10px 0;
+    color: #f0f0f0;
+}
+
+/* Стили для подвала */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #fc3d5d; 
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Стили для заголовков с тенью */
+h1, h2 {
+    text-shadow: 0 0 2px #1094c8a1, 0 0 3px #47c0f05e, 0 0 5px #56cfdfb4;
+}
+
+/* Стили для ссылок */
+a {
+    color: #104ac8a2; 
+    text-decoration: none;
+    transition: text-shadow cubic-bezier(0.55, 0.085, 0.68, 0.53);
+}
+
+a:hover {
+    text-shadow: 0 0 3px #107ec8, 0 0 5px #10a3c8, 0 0 8px #33e0d2c9;
+}
